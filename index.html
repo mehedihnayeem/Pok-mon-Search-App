@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"
+    />
+    <title>Pokémon Search App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <img
+        class="freecodecamp-logo"
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+        alt="freeCodeCamp Logo"
+      />
+      <h1>Pokémon Search App</h1>
+      <div class="io-section">
+        <p class="title">Search for Pokémon Name or ID:</p>
+        <form class="input-search">
+          <input type="text" id="search-input" required />
+          <button type="submit" id="search-button">Search</button>
+        </form>
+        <div class="pokemon-info">
+          <div class="name-id">
+            <p id="pokemon-name"></p>
+            <p><span id="pokemon-id"></span></p>
+          </div>
+          <div class="weight-height">
+            <p><span id="weight"></span></p>
+            <p><span id="height"></span></p>
+          </div>
+          <img class="pokemonImg" />
+          <div id="types"></div>
+        </div>
+        <div class="pokemon-base-stats">
+          <div class="base">
+            <p class="bold-text">Base</p>
+            <p>HP:</p>
+            <p>Attack:</p>
+            <p>Defense</p>
+            <p>Sp. Attack:</p>
+            <p>Sp. Defense:</p>
+            <p>Speed</p>
+          </div>
+          <div class="stats">
+            <p class="bold-text">Stats</p>
+            <p id="hp"></p>
+            <p id="attack"></p>
+            <p id="defense"></p>
+            <p id="special-attack"></p>
+            <p id="special-defense"></p>
+            <p id="speed"></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="io-section-bg">
+        <p>hello</p>
+      </div> -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
